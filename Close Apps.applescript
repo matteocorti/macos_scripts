@@ -7,7 +7,9 @@ end tell
 set exclusions to {"Script Editor", "Finder"}
 
 -- exclude iTunes at home
-set computer_name to computer name of (system info)
+if computer name of (system info) is "Matteo Corti’s Mac mini" then
+	set the end of exclusions to "iTunes"
+end if
 
 -- quit each app
 repeat with thisApp in allApps
