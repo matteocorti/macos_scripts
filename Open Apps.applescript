@@ -46,3 +46,9 @@ tell application "System Events"
 		end tell
 	end tell
 end tell
+
+-- set the sound volume
+set volume output volume 40 --100%
+
+-- unmute
+set volume without output muted
