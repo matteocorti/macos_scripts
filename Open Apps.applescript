@@ -15,13 +15,18 @@ tell application "Messages" to launch
 tell application "Terminal" to launch
 tell application "1Password" to launch
 tell application "Contacts" to launch
+tell application "Microsoft Excel" to launch
 
--- Open work hours log
+-- home
 
-tell application "Microsoft Excel"
-	launch
-	open "/Users/corti/Dropbox (POC ETH ID)/polybox/Work hours/2018-work hours.xlsx"
-end tell
+if computer name of (system info) is "Matteo Corti’s Mac mini" then
+	-- Open work hours log
+	tell application "Microsoft Excel" to open "/Users/corti/Dropbox (POC ETH ID)/polybox/Work hours/2018-work hours.xlsx"
+else
+	tell application "Microsoft OneNote" to launch
+	tell application "Microsoft Outlook" to launch
+end if
+
 
 -- Connect AirPods
 
