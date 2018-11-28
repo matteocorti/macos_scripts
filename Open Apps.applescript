@@ -19,10 +19,9 @@ tell application "Microsoft Excel" to launch
 
 -- home
 
-if computer name of (system info) is "Matteo Corti’s Mac mini" then
+if computer name of (system info) is "Matteo Corti’s MacBook Pro" then
 	-- Open work hours log
-	tell application "Microsoft Excel" to open "/Users/corti/Dropbox (POC ETH ID)/polybox/Work hours/2018-work hours.xlsx"
-else
+	tell application "Microsoft Excel" to open "/Users/corti/polybox/Work hours/2018-work hours.xlsx"
 	tell application "Microsoft OneNote" to launch
 	tell application "Microsoft Outlook" to launch
 end if
