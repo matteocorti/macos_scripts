@@ -6,10 +6,9 @@ tell application "Safari" to launch
 tell application "Reminders" to launch
 tell application "Calendar" to launch
 tell application "Notes" to launch
-tell application "iTunes" to launch
+tell application "Podcasts" to launch
 tell application "Skype" to launch
-tell application "Skype For Business" to launch
-tell application "MiCollab" to launch
+tell application "Skype for Business" to launch
 tell application "WhatsApp" to launch
 tell application "Messages" to launch
 tell application "Terminal" to launch

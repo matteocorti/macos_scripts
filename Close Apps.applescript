@@ -6,9 +6,9 @@ end tell
 -- leave some apps open 
 set exclusions to {"Script Editor", "Finder"}
 
--- exclude iTunes at home
+-- exclude WD Discovery at home
 if computer name of (system info) is "Matteo Corti’s Mac mini" then
-	set the end of exclusions to "iTunes"
+	set the end of exclusions to "WD Discovery"
 end if
 
 -- quit each app
