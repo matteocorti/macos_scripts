@@ -15,6 +15,7 @@ tell application "Terminal" to launch
 tell application "1Password" to launch
 tell application "Contacts" to launch
 tell application "Microsoft Excel" to launch
+tell application "Twitter" to launch
 
 -- home
 
