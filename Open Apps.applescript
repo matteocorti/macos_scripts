@@ -1,20 +1,21 @@
 -- Open applications
 
-tell application "Mail" to launch
+tell application "1Password" to launch
 tell application "Activity Monitor" to launch
-tell application "Safari" to launch
-tell application "Reminders" to launch
 tell application "Calendar" to launch
+tell application "Contacts" to launch
+tell application "Mail" to launch
+tell application "Messages" to launch
+tell application "Microsoft Excel" to launch
+tell application "Music" to launch
 tell application "Notes" to launch
 tell application "Podcasts" to launch
+tell application "Reminders" to launch
+tell application "Safari" to launch
 tell application "Skype" to launch
 tell application "Skype for Business" to launch
 tell application "WhatsApp" to launch
-tell application "Messages" to launch
 tell application "Terminal" to launch
-tell application "1Password" to launch
-tell application "Contacts" to launch
-tell application "Microsoft Excel" to launch
 tell application "Twitter" to launch
 
 -- home
