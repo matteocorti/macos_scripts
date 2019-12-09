@@ -32,22 +32,31 @@ end if
 
 activate application "SystemUIServer"
 tell application "System Events"
+	
 	tell process "SystemUIServer"
 		set btMenu to (menu bar item 1 of menu bar 1 whose description contains "bluetooth")
+		
 		tell btMenu
+			
 			click
-			tell (menu item "AirPods di Teo" of menu 1)
-				click
-				if exists menu item "Connect" of menu 1 then
-					click menu item "Connect" of menu 1
-				else
-					tell btMenu
-						click
-						key code 53
-						key code 53
-					end tell
-				end if
-			end tell
+			
+			if menu item "AirPods di Teo" of menu 1 exists then
+				
+				tell (menu item "AirPods di Teo" of menu 1)
+					click
+					if exists menu item "Connect" of menu 1 then
+						click menu item "Connect" of menu 1
+					else
+						tell btMenu
+							click
+							key code 53
+							key code 53
+						end tell
+					end if
+				end tell
+				
+			end if
+			
 		end tell
 	end tell
 end tell
