@@ -22,7 +22,7 @@ tell application "Twitter" to launch
 
 if computer name of (system info) is "Matteo Corti’s MacBook Pro" then
 	-- Open work hours log
-	tell application "Microsoft Excel" to open "/Users/corti/polybox/Work hours/2019-work hours.xlsx"
+	tell application "Microsoft Excel" to open "/Users/corti/polybox/Work hours/2020-work hours.xlsx"
 	tell application "Microsoft OneNote" to launch
 	tell application "Microsoft Outlook" to launch
 end if
