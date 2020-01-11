@@ -41,9 +41,9 @@ tell application "System Events"
 			
 			click
 			
-			if menu item "AirPods di Teo" of menu 1 exists then
+			if menu item "AirPods Pro di Teo" of menu 1 exists then
 				
-				tell (menu item "AirPods di Teo" of menu 1)
+				tell (menu item "AirPods Pro di Teo" of menu 1)
 					click
 					if exists menu item "Connect" of menu 1 then
 						click menu item "Connect" of menu 1
